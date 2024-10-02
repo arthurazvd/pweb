@@ -6,7 +6,7 @@ export default function Home(){
  
           <h2>
  
-            FERA
+            CONTATO
  
           </h2>
  
