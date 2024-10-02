@@ -1,17 +1,13 @@
-export default function Home(){
+import Home from './home';
+import Contact from './contact';
+import About from './about';
 
-    return (
- 
-       <div>
- 
-          <h2>
- 
-            FERA
- 
-          </h2>
- 
-       </div>
- 
-    )
-
- }
+export default function Main(){
+   return(
+      <div>
+         <Home />
+         <About />
+         <Contact />
+      </div>
+   );
+}

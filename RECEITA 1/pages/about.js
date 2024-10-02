@@ -1,14 +1,14 @@
-export default function Contact{
+export default function About(){
 
     return (
  
        <div>
  
           <h2>
-            Contato
+            Sobre
           </h2>
           <p>
-            Aqui é a aba contato
+            Aqui é a aba sobre
           </p>
  
        </div>

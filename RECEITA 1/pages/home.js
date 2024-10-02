@@ -1,14 +1,14 @@
-export default function Contact{
+export default function Home(){
 
     return (
  
        <div>
  
           <h2>
-            Contato
+            Seja bem vindo
           </h2>
           <p>
-            Aqui é a aba contato
+            Aqui é a Home
           </p>
  
        </div>
