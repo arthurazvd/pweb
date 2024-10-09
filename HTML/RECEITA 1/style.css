@@ -2,12 +2,22 @@
   box-sizing: border-box;
 }
 
-/* Create a two-column layout */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Adicionado para centralizar horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+  height: 90vh; /* Ocupa toda a altura da tela */
+  background-color: rgb(224, 224, 224);
+}
+
+
 .column {
   float: left;
 }
 
-/* Clearfix (clear floats) */
+
 .row::after {
   content: "";
   clear: both;
@@ -17,12 +27,12 @@
 #tabela {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 30%;
+    width: 50%
   }
   
   #tabela td, th {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
   }
   
   #tabela tr:nth-child(even){background-color: #f2f2f2;}
