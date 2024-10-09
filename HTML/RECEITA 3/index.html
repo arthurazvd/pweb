@@ -22,6 +22,8 @@
 
    <script>
 
+      let toquebotao = false;
+
       function carregarDiv(){
 
          let div = document.getElementById("meu amor")
@@ -34,14 +36,20 @@
 
         let div = document.getElementById("meu amor")
 
-        div.innerHTML = `<h1>Nada</h1>`
+        div.innerHTML = `<h1></h1>`
       }
 
       
 
-      let botao = document.getElementById("botaoCarregar")
-
-      botao.addEventListener("click", carregarDiv)                 
+      let botao = document.getElementById("botaoCarregar");
+        botao.addEventListener("click", function() {
+            if (toquebotao) {
+                descarregarDiv();
+            } else {
+                carregarDiv();
+            }
+            toquebotao = !toquebotao; // Alterna o estado
+        });
 
    </script>
 
