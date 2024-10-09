@@ -6,9 +6,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Adicionado para centralizar horizontalmente */
-  text-align: center; /* Alinha o texto ao centro */
-  height: 90vh; /* Ocupa toda a altura da tela */
+  align-items: center;
+  text-align: center; 
+  height: 90vh; 
   background-color: rgb(224, 224, 224);
 }
 
