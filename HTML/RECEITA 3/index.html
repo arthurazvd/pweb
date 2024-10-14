@@ -1,56 +1,48 @@
 <!DOCTYPE html>
-
-<html>   
-
+<html>
    <head>
-
-      <meta charset="UTF-8">      
-
-   </head>
-
-   
-
+      <meta charset="UTF-8">   
+      <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    </head>
    <body>
+      <div id="meu-amor" class="texto">
+         <h1>Carregando cervejas...</h1>
+      </div>  
+      <br>          
+      <div>
+         <button id="botaoCarregar">Carregar</button>
+      </div>
 
-        <div id="meu amor">Carregando cervejas...</div>            
-        <div>
-            <button id="botaoCarregar">Carregar</button>
-        </div>
-   </body>   
+      <script>
+         let toquebotao = false;
 
-   
+         function carregarDiv() {
+            let div = document.getElementById("meu-amor");
+            div.classList.add("oculto"); 
+            setTimeout(() => {
+               div.innerHTML = `<h1>Guinness</h1>`;
+               div.classList.remove("oculto"); 
+            }, 200);
+         }
 
-   <script>
+         function descarregarDiv() {
+            let div = document.getElementById("meu-amor");
+            div.classList.add("oculto"); 
+            setTimeout(() => {
+               div.innerHTML = `<h1>Heineken</h1>`;
+               div.classList.remove("oculto"); 
+            }, 200);
+         }
 
-      let toquebotao = false;
-
-      function carregarDiv(){
-
-         let div = document.getElementById("meu amor")
-
-         div.innerHTML = `<h1>Guinness</h1>`
-
-      }
-
-      function descarregarDiv(){
-
-        let div = document.getElementById("meu amor")
-
-        div.innerHTML = `<h1></h1>`
-      }
-
-      
-
-      let botao = document.getElementById("botaoCarregar");
-        botao.addEventListener("click", function() {
+         let botao = document.getElementById("botaoCarregar");
+         botao.addEventListener("click", function() {
             if (toquebotao) {
-                descarregarDiv();
+               descarregarDiv();
             } else {
-                carregarDiv();
+               carregarDiv();
             }
             toquebotao = !toquebotao;
-        });
-
-   </script>
-
+         });
+      </script>
+   </body>
 </html>
