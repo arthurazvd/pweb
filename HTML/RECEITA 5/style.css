@@ -4,25 +4,78 @@
     font-family: 'Inter', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
-}
-
-button{
-    height: 5vh;
-    width: 30vw;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-    background-color: red;
+    background-color: rgb(13, 38, 49);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
 }
 
+button{
+    width: 50vw;
+    height: 7vh;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1e89c7;
+    color: white;
+    transition: 0.5s;
+}
+
 button:hover{
-    background-color: #960505;
+    background-color: #5eb4e6;
+    transition: 0.5s;
+}
+
+.times {
+    color: white;
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1e89c7;
+    color: white;
+    border-radius: 40px 40px 0px 0px;
+    text-align: center;
+}
+
+td{
+    padding: 8px;
+    border: none;
+}
+
+tr{
+    background-color: #5eb4e6;
+}
+
+#opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
 }
