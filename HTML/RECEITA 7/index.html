@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>CERVEJAS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita 07</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div><button id="botaoCarregar">Carregar Tabela de Cervejas</button></div>
 
-    <table id="cervejasDiv">
-        <thead>
+<body class="container">
+    <div class="centro">
+        <button id="botaoCarregar">Carregar cervejas...</button>
+    </div>
+    <table id="cervejasTable" class="table">
+        <thead class="table-header">
             <tr>
+                <th>ID</th>
                 <th>Nome</th>
                 <th>Álcool</th>
-                <th>Estilo</th>
-                <th>IBU</th>
+                <th>Fermento</th>
+                <th>Maltes</th>
             </tr>
         </thead>
-        <tbody>
+
+        <tbody id="cervejasBody">
+
         </tbody>
     </table>
-
     <script src="script.js"></script>
 </body>
+
 </html>
